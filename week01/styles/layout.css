@@ -36,12 +36,6 @@ body {
     grid-column: 1 / 4;
 }
 
-.container .main {
-    background: #000000;
-    color: #e4e4e4;
-    grid-column: 1 / 4;
-}
-
 .container .nav {
     background: #000000;
     color: #e4e4e4;
