@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WDD 131 - WDD 131 - Dynamic Web Fundamentals - MArtin A. Pasco</title>
+   <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+   <meta name="author" content="Martin A. Pasco">
+   <link rel="stylesheet" href="styles/base.css">
+   <script src="scripts/getdates.js"></script>
+</head>
+<body>
+   
+    <header>
+        <h1 style="text-align: center;">WDD 131: Dynamic Web Fundamentals - Martin A. Pasco</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/martin-pasco-83a95548/">LinkedIn</a></li>
+            <a href="https://byui.instructure.com/">I-Learn</a</li>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
+            <a href="#">Final Project</a></li>
+        </nav>
+    </header>
+    <main  class="main">
+        <section class="card">
+            <h2>Main Content</h2>
+        </section>
+        <section class="card">
+            <h2>Aside Content</h2> 
+            <nav class="nav">
+                <ul>
+                    <li><a href="#" class="menu" >Google</a></li>
+                    <li><a href="#" class="menu" >Hotmail</a></li>
+                    <li><a href="#" class="menu" >Gmail</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> - Martin A. Pasco - Peru</p>
+        
+        <br>
+        <p>Last Modified <span id="demo"></span>
+        <script>
+            document.getElementById("demo").innerHTML = new Date(document.lastModified);
+        </script>
+        
+    </footer>
+
+   
+</body>
+</html> 
