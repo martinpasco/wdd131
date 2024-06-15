@@ -6,7 +6,7 @@
 
 header {
     width: 100%;
-    height: 80px;
+    height: 100px;
     background-color: #174e70;
     
 }
@@ -18,9 +18,10 @@ h1 {
 }
 
 nav {
+    height: 65%;
     background: #333333;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -42,7 +43,7 @@ nav a:hover {
 }
 
 main  nav{
-    background-color: white;
+    background-color: rgb(184, 172, 172);
 }
 
 section nav a {
@@ -65,7 +66,11 @@ footer {
     align-items: center;
 }
 p {
-    color: white;
+    color: black;
     font-size: 25px;
     align-items: center;
+}
+img {
+    width: 150px;
+    height: 150px;
 }

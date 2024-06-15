@@ -12,7 +12,7 @@
 <body>
    
     <header>
-        <h1 style="text-align: center;">WDD 131: Dynamic Web Fundamentals - Martin A. Pasco</h1>
+        <h1 style="text-align: center;">WDD 131: Dynamic Web Fundamentals - <font color = "bluelight">Martin A. Pasco</font></h1>
         <nav>
             <a href="https://www.linkedin.com/in/martin-pasco-83a95548/">LinkedIn</a></li>
             <a href="https://byui.instructure.com/">I-Learn</a</li>
@@ -22,26 +22,45 @@
     </header>
     <main  class="main">
         <section class="card">
-            <h2>Main Content</h2>
+            <h2>Martin Pasco</h2>
+            <p>Hello partners, My name is Martin Pasco, and I'm from Peru, I was born in a city called Callao,
+                but I'm living in Miami - Florida, I have been married for 9 years, We have a 1 dog Pinky name, 
+                It very playful, Pinky bring happines in our lifes, currently work at Acordis Corp like driver. 
+                Acordis is an It company like a driver and I hope get a certificacion for work in IT deparment, 
+                My hobies are Soccer, Running and Treking.</p>
+                <img src="/images/Martin Pasco.png" alt="Martin picture">
+                <p>Provincia constitucional del Callao - Peru</p>
+                <p>______________________</p>
+                <p>Callao es la capital de lima. Lima es la capital de Peru,    </p>
+                <img src="/images/Peru.png" alt="flag">
         </section>
         <section class="card">
-            <h2>Aside Content</h2> 
+            <h2>Web Dev Resources</h2> 
             <nav class="nav">
                 <ul>
-                    <li><a href="#" class="menu" >Google</a></li>
-                    <li><a href="#" class="menu" >Hotmail</a></li>
-                    <li><a href="#" class="menu" >Gmail</a></li>
+                    <li><a href="https://acordiscorp.com/" class="menu" >Acordis Technology</a></li>
+                    <li><a href="https://makitalatinamerica.com/" class="menu" >Makita tools</a></li>
+                    <li><a href="https://questtechnologyintl.com/" class="menu" >Quest Networking</a></li>
                 </ul>
             </nav>
         </section>
     </main>
     <footer class="footer">
-        <p>&copy; <span id="year"></span> - Martin A. Pasco - Peru</p>
-        
-        <br>
-        <p>Last Modified <span id="demo"></span>
+        <p>&copy; <span id="curYr"></span> - Martin A. Pasco - Peru</p>
         <script>
-            document.getElementById("demo").innerHTML = new Date(document.lastModified);
+            //value de year
+            var date = new Date();
+            var year = date.getFullYear();
+            document.getElementById('curYr').innerHTML = year;
+        </script>
+        <br><p></p>
+        <p>This document was last modified: <span id="demo"></span>
+        <script>
+            
+            let text = document.lastModified;
+            document.getElementById("demo").innerHTML = text;
+
+            //document.getElementById("demo").innerHTML = new Date(document.lastModified);
         </script>
         
     </footer>
