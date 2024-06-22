@@ -8,13 +8,13 @@ body {
 
 header, main, footer {
     max-width: 640px;
-    margin: 10px auto;
-    border: 1px solid #c5c7c3;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
     padding: 1rem;
-    background-color: #807185;
+    background-color: #e6f2ff;
 }
 
-headerh1 {
+h1 {
     color: black;
 }
 main{
@@ -25,7 +25,7 @@ main{
 
 section {
     padding: 1rem;
-    background-color: #f4ecec;
+    background-color: #fff;
 }
 
 @media screen and (min-width: 500px) {
