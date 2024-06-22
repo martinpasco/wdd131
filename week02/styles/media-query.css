@@ -1,0 +1,44 @@
+*{
+    border: 0;
+    padding: 0;
+}
+body {
+    font-family: 'roboto';
+}
+
+header, main, footer {
+    max-width: 640px;
+    margin: 10px auto;
+    border: 1px solid #c5c7c3;
+    padding: 1rem;
+    background-color: #807185;
+}
+
+headerh1 {
+    color: black;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #f4ecec;
+}
+
+@media screen and (min-width: 500px) {
+    header {
+        background-color: #0a090a;
+        
+    }
+    h1 {
+        color: #f4ecec;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+        
+}

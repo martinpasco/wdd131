@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>WDD 131 - WDD 131 - Dynamic Web Fundamentals - MArtin A. Pasco</title>
      <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
-     <meta name="author" content="Martin A. Pasco">
+     <meta name="author" content="Martin Alberto Pasco Sandoval">
      <link rel="stylesheet" href="styles/base.css">
-     <script src="scripts/getdates.js"></script>
+     
 </head>
 <body>
    <div class="container">
         <header class="header">
-            <h1 style="text-align: center;">WDD 131: Dynamic Web Fundamentals - <font color = "bluelight">Martin A. Pasco</font></h1>
+            <h1 style="text-align: center;">WDD 131: Dynamic Web Fundamentals - <span  style="color:blue;font-weight:bold">Martin Alberto Pasco Sandoval</span>
         </header>
         <nav class="nav">
-            <a href="https://www.linkedin.com/in/martin-pasco-83a95548/">LinkedIn</a></li>
-            <a href="https://byui.instructure.com/">I-Learn</a</li>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
-            <a href="#">Final Project</a></li>
+            <a href="https://www.linkedin.com/in/martin-pasco-83a95548/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a href="#">Final Project</a>
         </nav>
         <main  class="main">
             <section class="card" >
@@ -45,26 +45,21 @@
                         <li class="li"><a href="https://acordiscorp.com/" class="menu" >Acordis Technology</a></li>
                         <li class="li"><a href="https://makitalatinamerica.com/" class="menu" >Makita tools</a></li>
                         <li class="li"><a href="https://questtechnologyintl.com/" class="menu" >Quest Networking</a></li>
+                        <li class="li"><a href="https://questtechnologyintl.com/" class="menu" >Quest Networking</a></li>
                     </ul>
                 </nav>
             </section>
         </aside>
         <footer class="footer">
             <p>&copy; <span id="curYr"></span> - Martin A. Pasco - Peru</p>
-        
+            <script src="scripts/getdates.js" defer></script>
         <br><p></p>
         <p>This document was last modified: <span id="demo"></span>
-        <script>
-        //value de year
-            var date = new Date();
-            var year = date.getFullYear();
-            document.getElementById('curYr').innerHTML = year;
-        //last modified
-            let text = document.lastModified;
-            document.getElementById("demo").innerHTML = text;
-        </script>
+        
+        
     </footer>
 
    </div>
+   
 </body>
 </html> 

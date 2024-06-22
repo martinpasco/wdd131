@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     max-width: 90%;
     margin: 0 auto;
     margin: 20px auto;
@@ -40,7 +40,10 @@ body {
     grid-column: 1 / 6;
     grid-row: 1 / 2;
 }
-
+h1{
+    font-size: 27px;
+     
+}
 .container .nav {
     background: #333333;
     color: black;
@@ -96,7 +99,7 @@ a {
 .aside .card .nav  {
     height: auto;
     background: white;
-    color: none;
+    /*color: none;*/
     font-size: 25px;
     display:flex;
     justify-content: center;
@@ -108,6 +111,7 @@ a {
 .card{
     height: 98%;
     border: 1px outset black;
+    margin-left: 20px;
 }
 .me{
     float: right;
@@ -121,7 +125,7 @@ a {
 .flag{
     float: left;
     width: 120px;
-    height: 85px;
+    height: 80px;
     margin-right: 20px;
     position: relative;
     top: -20px;
