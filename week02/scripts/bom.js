@@ -1,16 +1,24 @@
-const input = document.querySelector('#favchap');
+//const list = document.querySelector('ul');//
+const input = document.querySelector('input');
 const button = document.querySelector('button');
-const list = document.querySelector('#list');
 
-const li = document.createElement('li');
-const deleteButton = document.createElement('button');
+button.addEventListener('click', () => {
+  const myItem = input.value;
+  input.value = '';
 
-li.textContent = input.value;
-deleteButton.textContent= 'X';
-li.append(deleteButton);
-list.append(li);
-button.addEventListener('click', function()
-{
-    if (input.value.trim() !== ''  {...})
-}
-)
+  const listItem = document.createElement('ul');
+  const listText = document.createElement('span');
+  const listBtn = document.createElement('button');
+
+  listItem.appendChild(listText);
+  listText.textContent = myItem;
+  listItem.appendChild(listBtn);
+  listBtn.textContent = '❌';
+  list.appendChild(listItem);
+
+  listBtn.addEventListener('click', () => {
+    list.removeChild(listItem);
+  });
+
+  input.focus();
+});
