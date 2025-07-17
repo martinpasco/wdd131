@@ -2,65 +2,71 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
-  list-style: none;
+}
+
+body, html {
+  height: 100%;
+  font-family: sans-serif;
 }
 
 .container {
   display: grid;
   height: 100vh;
-  grid-template-columns: auto auto auto auto ; 
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
 }
 
-
 header {
-  grid-column:  4 ;
+  grid-column: 1 / span 2;
   grid-row: 1;
-  background: #706f6f; color: #fff; padding: 10px;
+  background: #333;
+  color: white;
+  padding: 20px;
 }
 
 nav {
-    grid-column:  4 ;
-    display: flex-wrap;
-    justify-content: space-between;
-    background: #111;
-    color: #fff;
-    
-      
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+  padding: 15px;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
-nav ul {
-    padding: 0;
-    list-style: none;
-	display: flex;
-    justify-content: space-between;
-    text-align: center;
-}
-nav ul li {
-    padding: 10%;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-/* Contenido principal ocupa columna 1, fila 3 */
 main {
-  grid-column: 1/4;
+  grid-column: 1;
   grid-row: 3;
-  background: lightgray; padding: 20px;
+  background: lightgray;
+  padding: 30px;
 }
 
-/* El aside: columna 2 fija */
 aside {
-  grid-column: 4/5;
+  grid-column: 2;
   grid-row: 3;
-  width: 250px; /* ancho fijo */
-  background: white; padding: 20px;
+  width: 300px;
+  background: white;
+  padding: 30px;
 }
 
-/* Footer abarca ambas columnas */
 footer {
   grid-column: 1 / span 2;
   grid-row: 4;
-  background: #333; color: #f5c3c3; padding: 20px;
+  background: #333;
+  color: rgb(226, 188, 188);
+  padding: 20px;
 }
+
+header h1,
+footer p,
+main p,
+aside p {
+  margin: 0;
+}
+
+
