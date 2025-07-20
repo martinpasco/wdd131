@@ -4,10 +4,3 @@ const year = date.getFullYear();
 document.getElementById('curYr').innerHTML = year;
 
 const text = document.lastModified;
-document.getElementById("demo").innerHTML = text;
-/*
-const year = document.querySelector("#year");
-
-const today = new Date();
-
-year.innerHTML = `getFullYear(): <span class="highlight">${today.getFullYear()}</span>`;*/
