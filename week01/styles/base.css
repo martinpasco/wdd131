@@ -34,7 +34,7 @@ body {
 .container .header {
     width: 100%;
     height: 100%;
-    background-color:#061e1c;
+    background-color:#406b67;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -134,7 +134,7 @@ a {
 
 .about  {
     text-align: center;
-    background-color: #061e1c;
+    background-color: #406b67;
     border-top-left-radius: 40px 20px;
     border-top-right-radius: 40px 20px;
     color:white;
@@ -142,15 +142,15 @@ a {
 }
 .web {
     text-align: center;
-    background-color: #061e1c;
+    background-color: #406b67;
     /*border: 0px outset black;*/
     border-top-left-radius: 40px 20px;
     border-top-right-radius: 40px 20px;
 }
 
 .container .footer {
-    background: #061e1c;
-    color:#f0eded79;
+    background: #406b67;
+    color:white;
     grid-column: 1 / 6;
     grid-row: 7 / 8;
     display: flex;
@@ -159,6 +159,9 @@ a {
     align-items: center;
 }
 .main .card .centro{
-    text-align: center; 
+    text-align: center;
+}
+.modified{
+    color: rgb(220, 181, 132);  
 }
 
