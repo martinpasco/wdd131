@@ -1,24 +1,36 @@
-//const list = document.querySelector('ul');//
-const input = document.querySelector('input');
+// Obtener referencias a los elementos del DOM
+const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
+const list = document.querySelector('#list');
 
-button.addEventListener('click', () => {
-  const myItem = input.value;
-  input.value = '';
+// Agregar el evento al botón
+button.addEventListener('click', function () {
+  // Verifico que el campo no ande vacío
+  if (input.value.trim() !== '') {
+    // Creo elementos
+    const li = document.createElement('li');
+    const deleteButton = document.createElement('button');
 
-  const listItem = document.createElement('ul');
-  const listText = document.createElement('span');
-  const listBtn = document.createElement('button');
+    // Configuro el contenido
+    li.textContent = input.value;
+    deleteButton.textContent = '❌';
+    deleteButton.setAttribute('aria-label', 'Delete chapter');
 
-  listItem.appendChild(listText);
-  listText.textContent = myItem;
-  listItem.appendChild(listBtn);
-  listBtn.textContent = '❌';
-  list.appendChild(listItem);
+    // Inserto el botón dentro del li y luego agregarlo a la lista
+    li.appendChild(deleteButton);
+    list.appendChild(li);
 
-  listBtn.addEventListener('click', () => {
-    list.removeChild(listItem);
-  });
+    // Agrego evento al botón de eliminar
+    deleteButton.addEventListener('click', function () {
+      list.removeChild(li);
+      input.focus();
+    });
 
+    // Limpio el campo de entrada
+    input.value = '';
+  }
+
+  // Devuelvo el foco al campo de entrada 
   input.focus();
 });
+
