@@ -28,3 +28,17 @@ section {
     background-color: #fff;
 }
 
+@media screen and (min-width: 500px) {
+    header {
+        background-color: #0a090a;
+        
+    }
+    h1 {
+        color: #f4ecec;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+        
+}
