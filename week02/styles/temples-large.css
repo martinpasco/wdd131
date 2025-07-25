@@ -7,7 +7,7 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  background-color: #3C0A64; /* fondo claro */
+  background-color: #3C0A64; 
   
 }
 .navigation li {
@@ -34,9 +34,9 @@ header{
 
 .gallery img {
   width: 200%;
-  height: 300px; /* Puedes ajustar este valor (ej. 250px o 300px) */
-  object-fit: cover; /* Esto evita que se deformen */
-  border-radius: 8px; /* Opcional: esquinas redondeadas */
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 8px; 
 }
 
 footer{
