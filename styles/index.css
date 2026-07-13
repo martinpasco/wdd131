@@ -80,7 +80,7 @@
     font-size: 1em;
 }
 
-.main-title {
+.card {
     background-color: #1a3a5c;
     color: white;
     padding: 12px 20px;
@@ -201,11 +201,11 @@
 }
 
 
-/*hr {
+hr {
     border: 1px solid #1a3a5c;
     width: 80%;
     margin: 10px auto;
-}*/
+}
 
 
 .main section {
