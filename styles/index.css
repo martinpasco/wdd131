@@ -61,7 +61,7 @@
     font-size: 2.5em;
 }
 
-/* CONTENIDO - main y aside ajustados */
+
 .content-wrapper {
     display: grid;
     grid-template-columns: 1.8fr 0.9fr;
@@ -70,7 +70,7 @@
     max-width: 1000px;
 }
 
-/* MAIN */
+
 .main {
     background-color:white;
     padding: 20px;
@@ -90,7 +90,7 @@
     text-align: center;
 }
 
-/* ASIDE */
+
 .aside {
     background-color: white;
     padding: 20px;
@@ -158,71 +158,64 @@
 }
 
 
-/* ============================================
-   ESTILOS PARA IMÁGENES FLOTANTES
-   ============================================ */
 
-/* Limpiar floats */
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Imagen a la IZQUIERDA */
+
 .float-left {
     float: left;
     margin-right: 20px;
     margin-bottom: 10px;
-    width: 150px; /* Ajusta según necesites */
+    width: 150px; 
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-/* Imagen a la DERECHA */
+
 .float-right {
     float: right;
     margin-left: 20px;
     margin-bottom: 10px;
-    width: 150px; /* Ajusta según necesites */
+    width: 150px; 
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
-/* Para la imagen de perfil (si quieres que sea más grande) */
 .me {
     width: 180px;
 }
 
-/* Para la bandera */
 .flag {
     width: 160px;
 }
 
-/* Centrar texto */
+
 .centro {
     text-align: center;
 }
 
-/* Estilo para el hr */
+
 hr {
     border: 1px solid #1a3a5c;
     width: 80%;
     margin: 10px auto;
 }
 
-/* Ajuste de secciones */
+
 .main section {
     margin-bottom: 30px;
     padding: 15px;
     background-color: #f9f9f9;
     border-radius: 8px;
-    overflow: hidden; /* Para contener los floats */
+    overflow: hidden; 
 }
 
-/* Asegurar que el texto no se pegue a las imágenes */
 .main section p {
     text-align: justify;
     line-height: 1.6;
@@ -242,7 +235,7 @@ hr {
     margin: 5px 0;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 768px) {
     .content-wrapper {
         grid-template-columns: 1fr;
