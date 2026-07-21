@@ -1,66 +1,57 @@
-header{
+/* ===== HEADER EN PANTALLAS GRANDES ===== */
+header {
   background-color: #3C0A64;
-  color: white;
-}
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  background-color: #3C0A64; 
-  
-}
-.navigation li {
-  display: block;
-  flex: 1 1 auto;
-}
-.navigation a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 0.5rem 1rem;
-  background-color: #3C0A64;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  
+  /* Morado - CAMBIA AQUÍ EL COLOR PARA DESKTOP */
+  padding: 1rem 2rem;
 }
 
-#menu {
-  display: none;
-}
-.gallery {
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-}
+/* ===== TABLET (640px en adelante) ===== */
+@media (min-width: 640px) {
 
-.gallery img {
-  width: 200%;
-  height: 300px; 
-  object-fit: cover; 
-  border-radius: 8px; 
-}
+  /* Ocultar botón hamburguesa */
+  #menu {
+    display: none;
+  }
 
-footer{
-  background-color: #3C0A64;
-  color: white;
-}
+  /* Menú horizontal */
+  .navigation {
+    flex-direction: row;
+    background: none;
+    width: auto;
+    margin-top: 0;
+    gap: 0.5rem;
+  }
 
-@media (max-width: 29.99em) {
+  .navigation a {
+    display: block;
+    padding: 0.6rem 1.2rem;
+    border-bottom: none;
+    border-radius: 6px;
+  }
+
+  .navigation a:hover {
+    background-color: #1abc9c;
+  }
+
+  /* Galería en 2 columnas */
   .gallery {
-    grid-template-columns: 90%;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 
-@media (min-width: 30em) and (max-width: 47.99em) {
-  .gallery {
-    grid-template-columns: repeat(2, 45%);
-    justify-content: center;
+/* ===== DESKTOP (1024px en adelante) ===== */
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 2rem;
   }
-}
 
-@media (min-width: 48em) {
+  /* Galería en 3 columnas */
   .gallery {
-    grid-template-columns: repeat(3, 45%);
-    justify-content: center;
-    }
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery img {
+    height: 200px;
+  }
 }

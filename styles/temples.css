@@ -1,49 +1,43 @@
+/* ===== RESET ===== */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
 }
+
+/* ===== HEADER ===== */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1rem;
-  background-color: #eee; /* o el color que prefieras */
+  padding: 1rem 1.5rem;
+  background-color: #3C0A64;
+  /* Morado - CAMBIA AQUÍ EL COLOR PARA MÓVIL */
+  color: white;
 }
 
-h1 {
-  text-align: left;
-  font-family: times, serif;
+header h1 {
+  font-family: 'Times New Roman', serif;
   font-size: 1.5rem;
-  margin-left: 1rem;
+  margin: 0;
+  color: white;
 }
 
-h2 {
-  font-size: 1.2rem;
-  color: navy;
-  text-align: left;
-  margin: 1rem;
-}
-
-/* small view navigation */
-nav {
-  max-width: 700px;
-  margin: 1rem auto;
-}
-
-/* small view navigation */
+/* ===== BOTÓN HAMBURGUESA ===== */
 #menu {
-  font-size: 1.5rem;
-  border: 0;
+  font-size: 2rem;
+  border: none;
   background: none;
-  color: #000;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  color: white;
+  cursor: pointer;
+  display: block;
+  padding: 0.3rem 0.8rem;
 }
 
 #menu::before {
@@ -51,185 +45,109 @@ nav {
 }
 
 #menu.open::before {
-  content: "❌";
+  content: "✕";
 }
 
-nav {
-  max-width: 700px;
-  margin: 1rem auto;
-}
-
+/* ===== NAVEGACIÓN (MÓVIL) ===== */
 .navigation {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   list-style: none;
-  background-color: #333;
-  color: #fff;
+  background-color: #34495e;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .navigation a {
   display: none;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: white;
+  transition: background 0.3s, color 0.3s;
+  border-bottom: 1px solid #46607a;
 }
 
 .navigation a:hover {
-  background-color: #bbb;
-  color: #333;
+  background-color: #1abc9c;
+  color: #fff;
   font-weight: 700;
 }
 
+.navigation a.active::before {
+  content: "📍 ";
+}
 
-figure {
-  background-color: #eee;
-  padding: 0.5rem;
+/* Menú abierto (toggle con JS) */
+.navigation.open a {
+  display: block;
+}
+
+/* ===== MAIN ===== */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
   text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Times New Roman', serif;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-figcaption {
-  font-size: 0.9rem;
-  color: #d21111;
-  margin-top: 0.5rem;
-  text-align: center;  
-}
-
-.show li {
-  display: block;
-/* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-	display: block;
-}
-}
-.active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
-}
-
-.stuff {
-	margin: 0.5rem;
-	border: 1px solid rgb(0  0  0 / 0.1);
-	background-color: #bed;
-	max-width: 580px;
-	height: 100vh;
-}
-
-/* large view navigation ************************************/
-@media (min-width: 37.5em) {
-	h1 {
-		font-size: 2.5rem;
-		margin-left: 0;
-		text-align: center;
-	}
-
-	h2 {
-		font-size: 2rem;
-		text-align: center;
-	}
-
-	#menu {
-		display: none; /* hide hamburger button */
-	}
-
-	.navigation {
-		flex-direction: row;
-	}
-
-	.navigation a {
-		display: block;
-		flex: 1 1 100%;
-	}
-
-	.stuff {
-		margin: 1rem auto;
-	}
-}
-/* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-  display: block;
-}
-
-.active::before {
-  content: "📍";
-  /* just a wayfinding symbol for the user */
-}
-
-.stuff {
-  margin: 0.5rem;
-  border: 1px solid rgb(0 0 0 / 0.1);
-  background-color: #bed;
-  max-width: 580px;
-  height: 100vh;
-}
-
-/* large view navigation ************************************/
-@media (min-width: 37.5em) {
-  h1 {
-    font-size: 2.5rem;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  #menu {
-    display: none;
-    /* hide hamburger button */
-  }
-
-  .navigation {
-    flex-direction: row;
-  }
-
-  .navigation a {
-    display: block;
-    flex: 1 1 100%;
-  }
-
-  .stuff {
-    margin: 1rem auto;
-  }
-}
-/*main {
-  max-width: 800px;
-  margin: 1rem auto;
-  padding: 1rem;
-}*/
-
-
+/* ===== GALERÍA (MÓVIL: 1 COLUMNA) ===== */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 1rem;
-}
-.gallery figure {
-  /*border: 1px solid #ccc;*/
+  gap: 1.5rem;
   padding: 0.5rem;
-  background: #f9f9f9;
-  text-align: center;
 }
-footer{
-  background-color: #3C0A64;
-  color: white;
+
+.gallery figure {
+  background-color: white;
+  border-radius: 12px;
+  padding: 0.8rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
-  padding: 1rem;
-  
+  margin: 0;
+}
+
+.gallery figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .gallery img {
   width: 100%;
-  height: 150px; 
-  object-fit: cover; 
-  
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #eee;
+}
+
+.gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #3C0A64;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.3rem 0;
 }
